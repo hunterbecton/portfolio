@@ -38,7 +38,7 @@ function Seo({ description, lang, meta, keywords, title, image, url, author }) {
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             meta={[
               {
-                name: "descriptioin",
+                name: "description",
                 content: metaDescription,
               },
               {
