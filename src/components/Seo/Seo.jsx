@@ -57,7 +57,7 @@ function Seo({ description, lang, meta, keywords, title, image, url, author }) {
                 content: `website`,
               },
               {
-                property: `og:image:securee`,
+                property: `og:image:secure`,
                 content: metaImage,
               },
               {
