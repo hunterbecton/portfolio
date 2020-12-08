@@ -10,60 +10,62 @@ import Seo from "../components/Seo/Seo"
 
 const Home = ({ data }) => {
   return (
-    <Grid>
+    <>
       <Seo />
-      <Avatar>
-        <Img fixed={data.avatar.childImageSharp.fixed} />
-      </Avatar>
-      <About />
-      <Project
-        color="#30BC72"
-        title="Skillthrive"
-        logo={data.skillthrive.childImageSharp.fixed}
-        description={description1}
-        technologies={["Gatsby", "MDX", "Node", "Express", "MongoDb"]}
-        links={[
-          { title: "Site", href: "https://www.skillthrive.com/" },
-          { title: "YouTube", href: "https://www.youtube.com/skillthrive" },
-        ]}
-      />
-      <Project
-        color="#626DFF"
-        title="Mattermix"
-        logo={data.mattermix.childImageSharp.fixed}
-        description={description2}
-        technologies={["React", "Node", "Express", "MongoDb"]}
-        links={[
-          { title: "Site", href: "https://mattermix.vercel.app/" },
-          {
-            title: "React Repo",
-            href: "https://github.com/hunterbecton/mattermix-react",
-          },
-          {
-            title: "Node Repo",
-            href: "https://github.com/hunterbecton/mattermix-node",
-          },
-        ]}
-      />
-      <Project
-        color="#FF3377"
-        title="Whamboard"
-        logo={data.wham.childImageSharp.fixed}
-        description={description3}
-        technologies={["React", "Node", "Express", "MongoDb", "WebSockets"]}
-        links={[
-          { title: "Site", href: "https://whamboard.vercel.app/" },
-          {
-            title: "React Repo",
-            href: "https://github.com/hunterbecton/wham-react",
-          },
-          {
-            title: "Node Repo",
-            href: "https://github.com/hunterbecton/wham-node-example",
-          },
-        ]}
-      />
-    </Grid>
+      <Grid>
+        <Avatar>
+          <Img fixed={data.avatar.childImageSharp.fixed} />
+        </Avatar>
+        <About />
+        <Project
+          color="#30BC72"
+          title="Skillthrive"
+          logo={data.skillthrive.childImageSharp.fixed}
+          description={description1}
+          technologies={["Gatsby", "MDX", "Node", "Express", "MongoDb"]}
+          links={[
+            { title: "Site", href: "https://www.skillthrive.com/" },
+            { title: "YouTube", href: "https://www.youtube.com/skillthrive" },
+          ]}
+        />
+        <Project
+          color="#626DFF"
+          title="Mattermix"
+          logo={data.mattermix.childImageSharp.fixed}
+          description={description2}
+          technologies={["React", "Node", "Express", "MongoDb"]}
+          links={[
+            { title: "Site", href: "https://mattermix.vercel.app/" },
+            {
+              title: "React Repo",
+              href: "https://github.com/hunterbecton/mattermix-react",
+            },
+            {
+              title: "Node Repo",
+              href: "https://github.com/hunterbecton/mattermix-node",
+            },
+          ]}
+        />
+        <Project
+          color="#FF3377"
+          title="Whamboard"
+          logo={data.wham.childImageSharp.fixed}
+          description={description3}
+          technologies={["React", "Node", "Express", "MongoDb", "WebSockets"]}
+          links={[
+            { title: "Site", href: "https://whamboard.vercel.app/" },
+            {
+              title: "React Repo",
+              href: "https://github.com/hunterbecton/wham-react",
+            },
+            {
+              title: "Node Repo",
+              href: "https://github.com/hunterbecton/wham-node-example",
+            },
+          ]}
+        />
+      </Grid>
+    </>
   )
 }
 
