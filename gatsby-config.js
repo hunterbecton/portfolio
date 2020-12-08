@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: `https://hunterbecton.com`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
