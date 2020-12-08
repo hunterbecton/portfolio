@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
 const socialImage =
-  "https://storage.googleapis.com/skillthrive/images/social.jpg"
+  "http://storage.googleapis.com/skillthrive/images/social.jpg"
 
 function Seo({ description, lang, meta, keywords, title, image, url, author }) {
   return (
@@ -57,7 +57,7 @@ function Seo({ description, lang, meta, keywords, title, image, url, author }) {
                 content: `website`,
               },
               {
-                property: `og:image:secure`,
+                property: `og:image`,
                 content: metaImage,
               },
               {
