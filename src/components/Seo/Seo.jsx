@@ -2,9 +2,6 @@ import React from "react"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
-const socialImage =
-  "http://storage.googleapis.com/skillthrive/images/social.jpg"
-
 function Seo({ description, lang, meta, keywords, title, image, url, author }) {
   return (
     <StaticQuery
@@ -16,7 +13,7 @@ function Seo({ description, lang, meta, keywords, title, image, url, author }) {
           title || "Hunter Becton | Web Designer and Developer in Atlanta, GA"
         const metaAuthor = author || "Hunter Becton"
         const metaUrl = url || "https://hunterbecton.com"
-        const metaImage = image || socialImage
+        const metaImage = image || data.file.childImageSharp.fixed.src
         const metaKeywords = keywords || [
           "design",
           "web designer",
@@ -41,47 +38,47 @@ function Seo({ description, lang, meta, keywords, title, image, url, author }) {
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             meta={[
               {
-                name: `description`,
+                name: "descriptioin",
                 content: metaDescription,
               },
               {
-                property: `og:title`,
+                property: "og:title",
                 content: metaTitle,
               },
               {
-                property: `og:description`,
+                property: "og:description",
                 content: metaDescription,
               },
               {
-                property: `og:type`,
+                property: "og:type",
                 content: `website`,
               },
               {
-                property: `og:image`,
+                property: "og:image",
                 content: metaImage,
               },
               {
-                property: `og:url`,
+                property: "og:url",
                 content: metaUrl,
               },
               {
-                name: `twitter:card`,
+                name: "twitter:card",
                 content: `summary_large_image`,
               },
               {
-                name: `twitter:creator`,
+                name: "twitter:creator",
                 content: metaAuthor,
               },
               {
-                name: `twitter:title`,
+                name: "twitter:title",
                 content: metaTitle,
               },
               {
-                name: `twitter:description`,
+                name: "twitter:description",
                 content: metaDescription,
               },
               {
-                name: `twitter:image`,
+                name: "twitter:image",
                 content: metaImage,
               },
             ]
@@ -115,6 +112,13 @@ const detailsQuery = graphql`
         title
         description
         author
+      }
+    }
+    file(relativePath: { eq: "social.jpg" }) {
+      childImageSharp {
+        fixed(width: 1200, quality: 80) {
+          src
+        }
       }
     }
   }
