@@ -13,9 +13,9 @@ const Home = ({ data }) => {
     <>
       <Seo />
       <Grid>
-        <Avatar>
+        {/* <Avatar>
           <Img fixed={data.avatar.childImageSharp.fixed} />
-        </Avatar>
+        </Avatar> */}
         <About />
         <Project
           color="#30BC72"
@@ -26,6 +26,24 @@ const Home = ({ data }) => {
           links={[
             { title: "Site", href: "https://www.skillthrive.com/" },
             { title: "YouTube", href: "https://www.youtube.com/skillthrive" },
+          ]}
+        />
+        <Project
+          color="#FF7E62"
+          title="Dog Adoption Bot"
+          logo={data.dog.childImageSharp.fixed}
+          description={description4}
+          technologies={["Node", , "Twitter API"]}
+          links={[
+            {
+              title: "Twitter Bot",
+              href: "https://twitter.com/ATLDogAdoptions",
+            },
+            {
+              title: "Repo",
+              href: "https://github.com/hunterbecton/dog-adoption-bot",
+            },
+            { title: "Tutorial", href: "https://youtu.be/lco4xCX85Cw" },
           ]}
         />
         <Project
@@ -87,6 +105,13 @@ export const query = graphql`
         }
       }
     }
+    dog: file(relativePath: { eq: "dog-emoji.png" }) {
+      childImageSharp {
+        fixed(height: 35) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
     mattermix: file(relativePath: { eq: "mattermix-logo.png" }) {
       childImageSharp {
         fixed(height: 35) {
@@ -126,6 +151,8 @@ const Avatar = styled.div`
 `
 
 const description1 = `What started as a fun way to share my knowledge and explore new topics has now grown into a YouTube channel with nearly 40K subscribers. I've recently launched a new version of the site that features comprehensive written guides that are paired with video and code.`
+
+const description4 = `I wanted to explore the Twitter API by building a Twitter bot in Node, but I wanted the bot to do something good. I decided to work with the PetFinder API to search dogs within the Atlanta area that are up for adoption and share one every hour.`
 
 const description2 = `I noticed a lot of time was being spent by marketing teams requesting social graphics from designers. To fix this I explored how to use React components to create editable social graphics that don't require someone to learn how to edit templates in Sketch or Figma.`
 

@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
       background-color: ${props => props.theme.colors.black1};
-      padding: 2rem 8.75rem 8.75rem 8.75rem;
+      padding: 8.75rem;
       overflow-x: hidden;
 
       @media ${props => props.theme.breakpoints.m} {

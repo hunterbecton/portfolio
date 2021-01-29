@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components"
 import Theme from "./src/styles/theme"
 import { GlobalStyles } from "./src/styles/GlobalStyles"
 
-export const wrapRootElement = ({ element }) => (
+export const wrapPageElement = ({ element }) => (
   <ThemeProvider theme={Theme}>
     <GlobalStyles />
     {element}
