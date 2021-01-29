@@ -13,7 +13,9 @@ function Seo({ description, lang, meta, keywords, title, image, url, author }) {
           title || "Hunter Becton | Web Designer and Developer in Atlanta, GA"
         const metaAuthor = author || "Hunter Becton"
         const metaUrl = url || "https://hunterbecton.com"
-        const metaImage = image || data.file.childImageSharp.fixed.src
+        const metaImage =
+          image ||
+          "https://hunterbecton.com" + data.file.childImageSharp.fixed.src
         const metaKeywords = keywords || [
           "design",
           "web designer",
