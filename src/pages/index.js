@@ -71,7 +71,7 @@ const Home = ({ data }) => {
           description={description3}
           technologies={["React", "Node", "Express", "MongoDb", "WebSockets"]}
           links={[
-            { title: "Site", href: "https://whamboard.vercel.app/" },
+            { title: "Site", href: "https://whamboard.com" },
             {
               title: "React Repo",
               href: "https://github.com/hunterbecton/wham-react",
