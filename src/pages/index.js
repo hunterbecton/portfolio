@@ -29,6 +29,24 @@ const Home = ({ data }) => {
           ]}
         />
         <Project
+          color="#FF3377"
+          title="Whamboard"
+          logo={data.wham.childImageSharp.fixed}
+          description={description3}
+          technologies={["React", "Node", "Express", "MongoDb", "WebSockets"]}
+          links={[
+            { title: "Site", href: "https://whamboard.com" },
+            {
+              title: "React Repo",
+              href: "https://github.com/hunterbecton/wham-react",
+            },
+            {
+              title: "Node Repo",
+              href: "https://github.com/hunterbecton/wham-node-example",
+            },
+          ]}
+        />
+        <Project
           color="#FF7E62"
           title="Dog Adoption Bot"
           logo={data.dog.childImageSharp.fixed}
@@ -61,24 +79,6 @@ const Home = ({ data }) => {
             {
               title: "Node Repo",
               href: "https://github.com/hunterbecton/mattermix-node",
-            },
-          ]}
-        />
-        <Project
-          color="#FF3377"
-          title="Whamboard"
-          logo={data.wham.childImageSharp.fixed}
-          description={description3}
-          technologies={["React", "Node", "Express", "MongoDb", "WebSockets"]}
-          links={[
-            { title: "Site", href: "https://whamboard.com" },
-            {
-              title: "React Repo",
-              href: "https://github.com/hunterbecton/wham-react",
-            },
-            {
-              title: "Node Repo",
-              href: "https://github.com/hunterbecton/wham-node-example",
             },
           ]}
         />
