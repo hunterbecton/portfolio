@@ -25,11 +25,11 @@ export const GlobalStyles = createGlobalStyle`
       overflow-x: hidden;
 
       @media ${props => props.theme.breakpoints.m} {
-        padding: 2rem 3rem 3rem 3rem;
+        padding: 5rem 3rem;
       }
 
       @media ${props => props.theme.breakpoints.s} {
-            padding: 8rem 0 0 0;
+            padding: 5rem 0 0 0;
       }
     }
 

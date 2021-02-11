@@ -54,16 +54,43 @@ const About = () => {
             <AboutListItem>Express</AboutListItem>
             <AboutListItem>MongoDB</AboutListItem>
             <AboutListItem>Styled Components</AboutListItem>
-            <AboutListItem>Figma</AboutListItem>
           </AboutList>
         </AboutSmallSection>
         <AboutSmallSection>
-          <AboutContentTitle>Contact</AboutContentTitle>
+          <AboutContentTitle>Quick Links</AboutContentTitle>
           <AboutList>
-            <AboutListItem>Web Development</AboutListItem>
-            <AboutListItem>Web Design</AboutListItem>
-            <AboutListItem>Content Creation</AboutListItem>
-            <AboutListItem>YouTube Sponsorships</AboutListItem>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/hunterbecton"
+              alt="GitHub"
+            >
+              <AboutListItem>GitHub</AboutListItem>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://youtube.com/skillthrive"
+              alt="YouTube"
+            >
+              <AboutListItem>YouTube</AboutListItem>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/hunterbecton"
+              alt="Twitter"
+            >
+              <AboutListItem>Twitter</AboutListItem>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/huntergarrett/"
+              alt="LinkedIn"
+            >
+              <AboutListItem>LinkedIn</AboutListItem>
+            </a>
           </AboutList>
         </AboutSmallSection>
       </AboutContent>
