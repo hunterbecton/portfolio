@@ -33,7 +33,7 @@ const About = () => {
   return (
     <AboutContainer>
       <AboutHeader offset={offset}>
-        <p ref={aboutParagraphRef}>Full Stack Developer</p>
+        <p ref={aboutParagraphRef}>Full-Stack Developer</p>
         <h1 ref={aboutTitleRef}>Hunter Becton</h1>
       </AboutHeader>
       <AboutContent>
