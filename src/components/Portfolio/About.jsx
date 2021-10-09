@@ -40,25 +40,25 @@ const About = () => {
         <AboutLargeSection>
           <AboutContentTitle>About</AboutContentTitle>
           <AboutContentParagraph>
-            I'm a full stack JavaScript developer in Atlanta, GA. I love to
-            build apps and websites with Gatsby, React, Node, Express, and
-            MongoDB. I also create videos and tutorials on YouTube for those
-            wanting to learn web design and development.
+            I'm a full-stack JavaScript developer in Atlanta, GA. I love to
+            build web apps with Next.js, React, Express, and MongoDB. I'm
+            currently building Mattermix and create videos and tutorials on
+            YouTube.
           </AboutContentParagraph>
         </AboutLargeSection>
         <AboutSmallSection>
           <AboutContentTitle>Technologies</AboutContentTitle>
           <AboutList>
             <AboutListItem>React</AboutListItem>
-            <AboutListItem>Node</AboutListItem>
             <AboutListItem>Express</AboutListItem>
             <AboutListItem>MongoDB</AboutListItem>
-            <AboutListItem>Styled Components</AboutListItem>
+            <AboutListItem>Next.js</AboutListItem>
+            <AboutListItem>Tailwind</AboutListItem>
           </AboutList>
         </AboutSmallSection>
         <AboutSmallSection>
           <AboutContentTitle>Quick Links</AboutContentTitle>
-          <AboutList>
+          <AboutList linkColor="#FCD34D">
             <a
               target="_blank"
               rel="noopener noreferrer"

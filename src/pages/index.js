@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 import styled from "styled-components"
 
 import Grid from "../components/Layout/Grid"
@@ -13,10 +12,15 @@ const Home = ({ data }) => {
     <>
       <Seo />
       <Grid>
-        {/* <Avatar>
-          <Img fixed={data.avatar.childImageSharp.fixed} />
-        </Avatar> */}
         <About />
+        <Project
+          color="#4F46E5"
+          title="Mattermix"
+          logo={data.mattermix.childImageSharp.fixed}
+          description={description2}
+          technologies={["React", "Express", "MongoDb"]}
+          links={[{ title: "Site", href: "https://mattermix.com" }]}
+        />
         <Project
           color="#30BC72"
           title="Skillthrive"
@@ -62,24 +66,6 @@ const Home = ({ data }) => {
               href: "https://github.com/hunterbecton/dog-adoption-bot",
             },
             { title: "Tutorial", href: "https://youtu.be/lco4xCX85Cw" },
-          ]}
-        />
-        <Project
-          color="#626DFF"
-          title="Mattermix"
-          logo={data.mattermix.childImageSharp.fixed}
-          description={description2}
-          technologies={["React", "Node", "Express", "MongoDb"]}
-          links={[
-            { title: "Site", href: "https://mattermix.vercel.app/" },
-            {
-              title: "React Repo",
-              href: "https://github.com/hunterbecton/mattermix-react",
-            },
-            {
-              title: "Node Repo",
-              href: "https://github.com/hunterbecton/mattermix-node",
-            },
           ]}
         />
       </Grid>
@@ -154,6 +140,6 @@ const description1 = `What started as a fun way to share my knowledge and explor
 
 const description4 = `I wanted to explore the Twitter API by building a Twitter bot in Node, but I wanted the bot to do something good. I decided to work with the PetFinder API to search dogs within the Atlanta area that are up for adoption and share one every hour.`
 
-const description2 = `I noticed a lot of time was being spent by marketing teams requesting social graphics from designers. To fix this I explored how to use React components to create editable social graphics that don't require someone to learn how to edit templates in Sketch or Figma.`
+const description2 = `Mattermix is my current business I'm working on full-time. Mattermix makes it easy for anyone to create images from HTML and CSS using a browser-based editor and API.`
 
 const description3 = `No more sitting in awkward silence during a video conference. Whamboard is a fun way to respond to your teammates or friends with sounds. Pick from default sounds or upload your own to create an interactive soundboard you can share and use in realtime.`
