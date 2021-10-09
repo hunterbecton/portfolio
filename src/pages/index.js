@@ -18,7 +18,7 @@ const Home = ({ data }) => {
           title="Mattermix"
           logo={data.mattermix.childImageSharp.fixed}
           description={description2}
-          technologies={["React", "Express", "MongoDb"]}
+          technologies={["React", "Express", "MongoDB"]}
           links={[{ title: "Site", href: "https://mattermix.com" }]}
         />
         <Project
@@ -26,7 +26,7 @@ const Home = ({ data }) => {
           title="Skillthrive"
           logo={data.skillthrive.childImageSharp.fixed}
           description={description1}
-          technologies={["Gatsby", "MDX", "Node", "Express", "MongoDb"]}
+          technologies={["Gatsby", "MDX", "Node", "Express", "MongoDB"]}
           links={[
             { title: "Site", href: "https://www.skillthrive.com/" },
             { title: "YouTube", href: "https://www.youtube.com/skillthrive" },
@@ -37,7 +37,7 @@ const Home = ({ data }) => {
           title="Whamboard"
           logo={data.wham.childImageSharp.fixed}
           description={description3}
-          technologies={["React", "Node", "Express", "MongoDb", "WebSockets"]}
+          technologies={["React", "Node", "Express", "MongoDB", "WebSockets"]}
           links={[
             { title: "Site", href: "https://whamboard.com" },
             {
